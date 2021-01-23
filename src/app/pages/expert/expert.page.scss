@@ -1,0 +1,36 @@
+.background {
+  background-image: url('../../../assets/General-background/General-background.svg');
+  background-size: cover;
+  height: 100% !important;
+  width: 100% !important;
+  display: block;
+  overflow-y: scroll;
+
+}
+
+ion-card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    width: 95%;
+    
+}
+.ion-avatar {
+  height: 11vh;
+  width: 11vh;
+  background-color: #FACE59;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.ion-avatar-img {
+  height: 10vh !important;
+  width: 10vh !important;
+  border-radius: 50%;
+  position: relative;
+  align-self: center;
+  left: 4%;
+  top: 4%;
+}

@@ -1,16 +1,45 @@
-<ion-menu side="start" menuId="first">
-  <ion-header>
-    <ion-toolbar color="primary">
-      <ion-title>Start Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
+<!-- <ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons class="ion-no-margin">
+   -->
+      <!-- <ion-button ">
+        <ion-icon class="ion-icon"  name="notifications"></ion-icon>
+        <ion-badge>6</ion-badge>
+      </ion-button> -->
+
+      <!-- <ion-button class="button1"  (click)="presentPopover($event)" >
+        <ion-icon size="large" name="notifications"></ion-icon>
+        <ion-label color="primary">3</ion-label>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+</div> -->
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon slot="icon-only" name="notifications"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<div class="background">
+  <ion-card (click)="onClick()">
+    <img src="../../assets/Slide/Slide1/Doctor.png">
+    <h2><b>Contacter un expert</b></h2>
+  </ion-card>
+  <ion-card (click)="onClick1()">
+    <img src="../../assets/home/instruction.svg">
+    <h2><b>Carelib</b></h2>
+  </ion-card>
+  <ion-card (click)="onClick2()">
+    <img src="../../assets/home/lecture.svg">
+    <h2><b>Formation</b></h2>
+  </ion-card>
+</div>

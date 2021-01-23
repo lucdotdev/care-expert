@@ -9,9 +9,17 @@ const routes: Routes = [
       import('./index/index.module').then(m => m.IndexPageModule)
   },
   {
-    path: '',
+    path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
+  { path: 'chat', loadChildren: './pages/chat/chat.module#ChatPageModule' },
+  { path: 'carelib', loadChildren: './pages/carelib/carelib.module#CarelibPageModule' },
+  { path: 'expert', loadChildren: './pages/expert/expert.module#ExpertPageModule' },
+  { path: 'expert-details', loadChildren: './pages/expert-details/expert-details.module#ExpertDetailsPageModule' },
+  { path: 'formation', loadChildren: './pages/formation/formation.module#FormationPageModule' },
+  { path: 'formation-details', loadChildren: './pages/formation-details/formation-details.module#FormationDetailsPageModule' },
+  { path: 'carelib-details', loadChildren: './pages/carelib-details/carelib-details.module#CarelibDetailsPageModule' },
+  { path: 'settings', loadChildren: './pages/settings/settings.module#SettingsPageModule' },
 
 ];
 
@@ -22,3 +30,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+

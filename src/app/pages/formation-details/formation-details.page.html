@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+
+    <ion-buttons class="width">
+      <ion-back-button>
+      </ion-back-button>
+    </ion-buttons>
+
+    <div class="head">
+      <div class="ion-avatar">
+        <img class="ion-avatar-img" src="../../../assets/formation/test-femme.jpg">
+
+      </div>
+      <h2 style="padding: 10px;">
+        <b>
+          Comment soigner un enfant
+        </b>
+
+      </h2>
+    </div>
+    <ion-button class="mybutton">
+
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+        <ion-label>Reserver</ion-label>
+
+    </ion-button>
+    <ion-segment scrollable="true" (ionChange)="segmentChanged()" [(ngModel)]="segment" color="warning">
+       
+    <ion-segment-button value="0">
+        <ion-label color="light">
+          Programme
+        </ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="1">
+        <ion-label color="light">
+          video
+        </ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+ 
+  
+</ion-header>
+<ion-content>
+  
+  <ion-slides #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+    <ion-slide>
+      <h3>formation par docteur ghontilde</h3>
+      
+    </ion-slide>
+    <ion-slide>
+      second
+    </ion-slide>
+    <ion-slide>
+      third
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content>

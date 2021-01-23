@@ -1,8 +1,48 @@
 .lp{
-    background-image: url("../../../assets/login/login-background.png");
+    background: url("../../../assets/login/login-background.png");
     background-size: cover;
     text-align: center;
     height: 100vh;
     width:  100% !important;
+    img{
+      margin-top: 6vh;
+      height: 15vh
+        
+    }
+
+  div{  
+    margin-top: 15vh;
+  }
 
 }
+.boutton{
+    margin-top: 5vh;
+    height: 5vh
+
+}
+ion-input {
+    height: 10vh;
+    margin-top: 2.6%;
+    input{
+    border-bottom: none
+  }
+}
+
+ion-item {
+    border-color: white !important;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 1px 1px 20px #e0e0e0;
+    width: 90%;
+    height: 62px;
+    margin-left: 5%;
+    margin-bottom: 15px;
+    /* background-color: #618021; */
+   
+      
+    
+
+}
+
+ 
+

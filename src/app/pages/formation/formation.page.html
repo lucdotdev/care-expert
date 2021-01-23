@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<div class="background">
+  <ion-card *ngFor="let formation of formations" (click)="onClick()">
+    <img [src]="formation.image">
+    
+    <div class="date">
+      <h1>27</h1>
+      <h3>mars</h3>
+    </div>
+    <div>
+      <span class="span">
+        <p style="color: #ffffffff">CARDIOLOGIE</p>
+       
+      </span>
+      <h1 style="padding: 0 0 10px;color: #333333;font-size: 26px;font-weight: 700;">
+          {{formation.titre}}
+        </h1>
+    </div>
+
+    <p style="color: #ffa200;font-size: 20px;font-weight: 400;margin: 0;">Par docteur {{formation.formateur}}</p>
+    <div class="mydiv">
+      <div>
+        <ion-icon class="myicon" name="alarm"></ion-icon>
+
+        <ion-label>
+          {{formation.duree}}
+        </ion-label>
+
+
+      </div>
+
+    </div>
+
+  </ion-card>
+</div>

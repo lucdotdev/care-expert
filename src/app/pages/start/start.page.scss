@@ -1,11 +1,40 @@
-.bg{
+.bg {
     background-image: url("../../../assets/start/background.png");
     background-size: cover;
+
+    height: 100vh !important;
+    width: 100% !important;
+    display: block;
     text-align: center;
-    height: 100vh;
-    width:  100% !important;
+
+    
 
 }
-.lp{
-    padding-top: 35%
+
+.div {
+        
+    text-align: center;
+    margin-top: 20%
+    
+}
+
+.boutton {
+    width: 50vh;
+    height: 8vh;
+    align-items: center;
+
+}
+
+.boutton1 {
+    width: 50vh;
+    height: 8vh;
+    align-items: center;
+
+}
+.img{
+    text-align: center;
+  
+}
+.margin{
+    margin-top: 10%
 }

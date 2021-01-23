@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import { Platform, NavController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { IonicStorageModule } from '@ionic/storage';
 
 @Component({
   selector: 'app-root',
@@ -12,29 +13,44 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
+      title: 'Acceuil',
       url: '/home',
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Parametres',
+      url: '/settings',
+      icon: 'settings'
+    },
+    {
+      title: 'Se deconnecter',
+      url: '/login',
+      icon: 'log-out'
     }
   ];
 
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private navCtrl: NavController
   ) {
     this.initializeApp();
   }
+  dembow() {
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
   }
+  initializeApp() {
+    if (this.platform.is('android')) {
+      this.statusBar.backgroundColorByHexString('#33000000');
+    }
+    this.platform.ready().then(() => {
+
+    this.splashScreen.hide();
+    });
+
+
+  }
+
+
 }

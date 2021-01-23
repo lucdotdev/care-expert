@@ -1,0 +1,34 @@
+.background{
+    background-image: url('../../../assets/General-background/General-background.svg');
+    background-size: cover;
+    height: 100% !important;
+    width:  100% !important;
+    display: block;
+    overflow-y: scroll;
+   
+}
+ion-card{
+    background-color: #ffffff;
+
+    height: 20%;
+    display: inline-table;
+
+}
+.mydiv{
+    
+        display: flex;
+        div{
+            display: flex;  
+            padding-top: 5%;
+          
+        }
+    
+}
+.myicon{
+    height: 17px;
+    width:  16px;
+}
+.mybutton{
+    margin-left: 45%
+
+}

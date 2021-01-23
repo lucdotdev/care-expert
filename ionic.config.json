@@ -1,5 +1,7 @@
 {
-  "name": "side",
-  "integrations": {},
+  "name": "Care-expert",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -25,13 +25,59 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .swiper-pagination-bullet {
     width: 18px;
     border-radius: 20px;
-    background-image: linear-gradient(to right, #fdfdfd, #bdbcc7, #7f8094, #444964, #051937);   
+    background-image: linear-gradient(to right, #d2d9e3, #b8c5d5, #9cb2c6, #80a0b7, #618ea8);
 }
 
 * {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat' !important;
+}
+
+.header-ios ion-toolbar:last-child {
+    --border-width: 0;
+    --border-color: transparent;
+
+}
+.getstart { 
+    background-image: url('./assets/General-background/General-background.svg')
+
+}
+.toolbar-container {
+    padding-left: var(--padding-start);
+    padding-right: var(--padding-end);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: var(--min-height);
+    contain: content;
+    z-index: 10;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+ion-header {
+    /* display: block; */
+    /* position: relative; */
+    -ms-flex-order: -1;
+    /* order: -1; */
+    /* width: 100%; */
+    /* z-index: 10; */
+}
+toolbar-container{
+    display: contents !important;
+}
+.swiper-container-horizontal>.swiper-scrollbar {
+  
+    height: 0px;
+    width: 0%; 
 }

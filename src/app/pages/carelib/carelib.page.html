@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons>
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
+
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<div class="background">
+  <ion-card (click)="onClick()" *ngFor="let livre of livres">
+    <img [src]="livre.image">
+    <ion-card-title>
+      <b>{{livre.nom}}</b>
+    </ion-card-title>
+    <div class="mydiv">
+      <!-- <div>
+            <ion-icon class="myicon" name="book"></ion-icon>
+            <p>500 pages</p>
+            
+        </div> -->
+      <div>
+        <ion-icon class="myicon" name="book"></ion-icon>
+
+        <ion-label>
+          {{livre.pages}} pages
+        </ion-label>
+
+
+      </div>
+    </div>
+
+  </ion-card>
+</div>
